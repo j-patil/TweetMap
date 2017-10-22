@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geo Tweets</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      #map {
+        height: 100%;
+      }
+      html, body {
+        height: 100%;
+        padding: 0;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./CSS/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/css/style.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=visualization"></script>
+    <script type="text/javascript" src="/JS/socket.io-client.min.js"> </script>
+    <script type="text/javascript" src="/JS/jquery.min.js"> </script>
+    <script src="/JS/twitterJS.js"></script>
+  </head>
+  <body onload="initMap();">
+    
+      <label>Search:</label>
+      <select onchange="selectItem(this.value)">
+        <option value="" selected></option>
+        <option value="bitcoin">Bitcoin</option>
+        <option value="internet">Internet</option>
+        <option value="NapsInFiveWords">NapsInFiveWords</option>
+        <option value="iphone">iPhone</option>
+        <option value="pixel">Pixel</option>
+        <option value="food">Food</option>
+        <option value="song">Song</option>
+        <option value="football">Football</option>
+        <option value="harry potter">Harry Potter</option>
+        <option value="beer">Beer</option>
+      </select> 
+    <div id="map"></div>
+  </body>
+</html>
