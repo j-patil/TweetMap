@@ -1,0 +1,20 @@
+{
+  "name": "tweetmap",
+  "version": "1.0.0",
+  "description": "\"Geo pinning of Tweets\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Monil Shah and Jayesh Patil",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.1",
+    "dotenv": "^2.0.0",
+    "elasticsearch": "^12.0.1",
+    "express": "^4.14.0",
+    "http-aws-es": "^1.1.3",
+    "socket.io": "^1.5.1",
+    "twitter": "^1.4.0"
+  }
+}
