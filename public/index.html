@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Geo Tweets</title>
+    <title>Tweet Map</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
@@ -12,6 +12,7 @@
         height: 100%;
         padding: 0;
       }
+	<!-- Adding references for javascript and css file -->
     </style>
     <link rel="stylesheet" type="text/css" href="./CSS/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./CSS/css/style.css">
@@ -20,13 +21,14 @@
     <script type="text/javascript" src="/JS/jquery.min.js"> </script>
     <script src="/JS/twitterJS.js"></script>
   </head>
+  
   <body onload="initMap();">
-
+  <!-- Adding commonly used terms -->
       <label>Search:</label>
       <select onchange="selectItem(this.value)">
         <option value="" selected></option>
         <option value="lol">LOL</option>
-        <option value="friends">Friends</option>
+        <option value="friend">Friend</option>
         <option value="twitter">Twitter</option>
         <option value="birthday">Birthday</option>
         <option value="today">Today</option>
